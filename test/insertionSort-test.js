@@ -14,13 +14,6 @@ describe('insertionSort', () => {
     assert.isArray(sortedArray)
   });
 
-  it('should return an array of the same length', () => {
-    let unsortedArray = [1, 3, 5, 6, 2, 9, 4];
-    let sortedArray = insertionSort(unsortedArray);
-
-    assert.equal(sortedArray.length, 7);
-  });
-
   it('should sort an array of numbers', () => {
     let unsortedArray = [1, 3, 5, 6, 2, 9, 4];
     let sortedArray = [ 1, 2, 3, 4, 5, 6, 9 ];
@@ -29,11 +22,10 @@ describe('insertionSort', () => {
     assert.deepEqual(result, sortedArray)
   });
 
-  it('should sort an array of random letters', () => {
-    let unsortedArray = ['d', 'g', 'f', 'a', 'c', 'e', 'b'];
-    let sortedArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
-    let result = insertionSort(unsortedArray)
+  it('should return an array of the same length', () => {
+    let unsortedArray = [1, 3, 5, 6, 2, 9, 4];
+    let sortedArray = insertionSort(unsortedArray);
 
-    assert.deepEqual(result, sortedArray)
+    assert.equal(sortedArray.length, 7);
   });
 });
